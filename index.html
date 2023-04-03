@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try your luck.</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <main>
+        <div class="first-screen">
+            <h1>Qual é sua sorte de <br> hoje?</h1>
+            <p>Abra o biscoito e descubra!</p>
+
+            <div class="btnBiscuit">
+                <button onclick="toggleScreen('first-screen')" id="btnTry">
+                    <img src="./assets/fortune-cookie.png" alt="botão biscoitinho da sorte fechado">
+                </button>
+            </div>            
+        </div>
+
+
+        <div class="second-screen hide" >
+            <h1>Aqui está sua sorte<br> de hoje:</h1>
+
+            <div class="msgLabel">
+                    <div class="msgText"></div>
+                    
+                    <img src="./assets/fortuneCookieOpen.png" alt="">
+
+
+                    <button onclick="toggleScreen('second-screen')" id="btnTryAgain">
+                        Abrir outro biscoito
+                    </button>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
